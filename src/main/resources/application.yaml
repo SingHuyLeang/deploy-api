@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+
+db:
+  name: ${db-name}
+  limit-size: 536870912
+
+spring:
+  application:
+    name: api
+  datasource:
+    url: jdbc:postgresql://db:5432/db-api
+    username: huyleang
+    password: 1di2y3r7y92o
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: true
+
+
